@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', serif;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #89cdbd;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;  
+}
+.calculator{
+    background-color: #3a4452;
+    padding: 35px;
+    box-shadow: 0 0 15px rgb(0,0,0,0.4);
+    border-radius: 20px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    color: #fff;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    font-size: medium;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.calculator form input:hover{
+    transition: all 0.7s ease;
+    box-shadow: 0 0 10px rgba(200, 200, 255, 0.8);
+    transform: scale(1.08); 
+}
+.custom-text .ct1{
+    position: absolute;
+    top: 4px;
+    left: 43.5%;
+    font-size: 55px;
+    font-family: 'Comic Neue', cursive, sans-serif;
+    font-weight: 700;
+}
+.custom-text .ct1:hover{
+    transition:all 2s cubic-bezier(0.3, 1, 0.3, 1);
+    transform: scale(1.08);
+}
+.custom-text .ct2{
+    position: absolute;
+    top: 64px;
+    left: 54%;
+    font-size: 20px;
+    font-family: 'Comic Neue', cursive, sans-serif;
+    font-weight: 500;
+}
+.custom-text .ct2:hover{
+    transition:all 2s cubic-bezier(0.3, 1, 0.3, 1);
+    transform: scale(1.08);
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+} 
+form .display input{
+    box-shadow: 0 0 15px rgba(127, 122, 122, 0.3);
+    font-size: 50px;
+    flex: 1;
+    text-align: right;
+}
